@@ -16,6 +16,7 @@
     </string>
     <string name="detail_location">"8 Rue Scribe, 75009 Paris, France"</string>
     <string name="name">Raúl Ramírez Pérez.</string>
-    <string name="dam">Desarrollados de aplicaciones multiplataforma.</string>
+    <string name="age">21 años.</string>
+    <string name="phone">Teléfono: 999999999</string>
     <string name="github_profile">raulrp3(https://github.com/raulrp3)</string>
 </resources>

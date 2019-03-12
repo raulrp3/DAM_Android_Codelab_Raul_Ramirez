@@ -119,6 +119,9 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == android.R.id.home){
             mDrawerLayout.openDrawer(GravityCompat.START);
+        }else if(id == R.id.about){
+            Intent intent = new Intent(MainActivity.this,AboutActivity.class);
+            startActivity(intent);
         }
         return  super.onOptionsItemSelected(item);
     }
