@@ -2,6 +2,7 @@ package com.example.codelabmaterialdesign;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
@@ -48,6 +49,15 @@ public class ListContentFragment extends Fragment {
             avatar = itemView.findViewById(R.id.list_avatar);
             name = itemView.findViewById(R.id.list_title);
             description = itemView.findViewById(R.id.list_desc);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Context context = v.getContext();
+                    Intent intent = new Intent(context,DetailActivity.class);
+                    intent.putExtra(DetailActivity.EXTRA_POSITION, getAdapterPosition());
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 
