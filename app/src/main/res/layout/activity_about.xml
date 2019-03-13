@@ -48,12 +48,34 @@
             android:layout_marginStart="10dp"/>
 
         <TextView
+            android:id="@+id/text_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/phone"
             android:textSize="20sp"
             android:layout_toEndOf="@id/img_account"
             android:layout_below="@id/text_age"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_github"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:src="@drawable/github"
+            android:layout_toEndOf="@id/img_account"
+            android:layout_below="@id/text_phone"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/github_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/github_profile"
+            android:textSize="15sp"
+            android:layout_toEndOf="@+id/img_github"
+            android:layout_below="@id/text_phone"
             android:layout_marginTop="5dp"
             android:layout_marginStart="10dp"/>
     </RelativeLayout>
